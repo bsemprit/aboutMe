@@ -1,0 +1,45 @@
+.first-row {
+	margin-bottom: 0 !important;
+}
+
+.quote {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: "Allura", serif;
+}
+
+
+.left-top {
+	background-image: url("../images/blpurple.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom;
+	height: 100vh;
+}
+
+.left-portfolio {
+
+}
+
+
+.projects-holder {
+	position: relative;
+}
+
+.gamer {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	width: 200px;
+	height: 100px;
+}
+
+.macbook {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	width: 400px;
+	height: 200px;
+}
