@@ -2,14 +2,14 @@
 
 
 body {
-	background-image: url('../images/codigo1.jpg'), url("../images/paintpurp.png"), url("../images/humanBrain.png"), url("../images/paintblue.png"), url("../images/paintpurple.png");
+	background-image: url("../images/paintpurp.png"), url("../images/humanBrain.png"), url("../images/paintblue.png"), url("../images/paintpurple.png"), url("../images/rainbow.jpg");
 	background-color: black;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: 100%, 25%, 20%, 50%, 50%;
+	background-size: 25%, 20%, 50%, 50%, 100%;
 	background-attachment: fixed;
-	background-position: -50vh -50vh, 80% 200%, center center, center right, center right;
+	background-position: 80% 200%, center center, center right, center right, center;
 	background-repeat:  no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
@@ -48,6 +48,22 @@ body {
 	height: 100vh;
 	/*z-index: 5;*/
 	padding: 0 !important;
+	position: relative;
+}
+
+.left-side:before {
+	background-image: url("../images/codigo1.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center,
+	z-index: 1;
+	opacity: 0.6
+	width: 100%;
+	height: 100%;	
+	position: absolute;
 }
 
 .full-home-page {
