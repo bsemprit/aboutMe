@@ -1,0 +1,88 @@
+ @font-face { font-family: 'Rex'; src: url('../fonts/RexBold.otf'); } 
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
+
+.first-row {
+	margin-bottom: 0 !important;
+}
+
+.quote {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: "Allura", serif;
+}
+
+
+.left-top {
+	background-image: url("../images/blpurple.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom;
+	height: 100vh;
+}
+
+.left-portfolio {
+
+}
+
+.nav-bar {
+	position: fixed;
+	right: 0;
+	top: -6% !important;
+	z-index: 10;
+	width: 25vh;
+}
+
+.computer-nav {
+	width: 25vh;
+	height: auto;
+}
+
+.nav-text-holder {
+	position: absolute;
+	top: 40%;
+	right: 30%;
+	font-family: 'Rex', serif;
+	font-size: 1.3em;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.blinker {
+	display: inline-block;
+	height: 1em;
+}
+
+.projects-holder {
+	position: relative;
+}
+
+.gamer {
+	position: relative;
+	top: 50%;
+	left: 10%;
+	width: 200px;
+	height: 100px;
+}
+
+.macbook {
+	position: relative;
+	top: 50%;
+	left: 10%;
+	width: 400px;
+	height: 200px;
+}
+

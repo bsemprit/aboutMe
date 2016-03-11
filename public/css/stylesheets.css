@@ -1,0 +1,76 @@
+ @font-face { font-family: 'Rex'; src: url('../fonts/RexBold.otf'); } 
+
+
+body {
+	background-image: url('../images/codigo1.jpg'), url("../images/paintpurp.png"), url("../images/humanBrain.png"), url("../images/paintblue.png"), url("../images/paintpurple.png");
+	background-color: black;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%, 25%, 20%, 50%, 50%;
+	background-attachment: fixed;
+	background-position: -50vh -50vh, 80% 200%, center center, center right, center right;
+	background-repeat:  no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.home-welcome {
+	position: absolute;
+	text-shadow: 3px 2px 1px white;
+	 /*-webkit-text-stroke: 1px white;*/
+	z-index: -1;
+}
+
+.bianca-text {
+	/*position: absolute;*/
+/*	transform: rotate(-15deg);
+	top: 210%;
+	left: 5%;*/
+	font-size: 4rem;
+}
+
+.world-text {
+	/*position: absolute;*/
+	/*transform: rotate(-8deg);*/
+/*	top: 400%;
+	left: 13%;*/
+	font-size: 4rem;
+}
+
+.home-text {
+	font-family: 'Cinzel Decorative', serif;
+	font-weight: 700;
+	background-color:rgba(0, 0, 0);
+	/*z-index: 10;*/
+}
+
+.left-side, .right-side {
+	/*background-color: rgba(243, 229, 245, 0);*/
+	height: 100vh;
+	/*z-index: 5;*/
+	padding: 0 !important;
+}
+
+.full-home-page {
+	margin-bottom: 0 !important;
+}
+
+.enter-left, .enter-right {
+	position: absolute;
+}
+
+.enter-left {
+	top: 40vh;
+	left: 18%;
+	font-family: 'Rex', serif; 
+}
+
+.enter-left-text, .enter-right-text {
+	font-size: 50px !important;
+	background-color:rgba(0, 0, 0);
+}
+
+.enter-right {
+	top: 40vh;
+	right: 18%;
+	font-family: "Cinzel", serif;
+}
