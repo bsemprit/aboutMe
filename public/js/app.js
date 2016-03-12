@@ -5,22 +5,22 @@ $(document).on("ready", function() {
 	$(".welcome-left-text").hide();
 	$(".welcome-right-text").hide();
 
-	$(".left-side").mouseenter(function() {
+	$(".left-side-text").mouseenter(function() {
 		$(".welcome-left-text").fadeIn();
 		console.log("Fade")
 	})
 
-	$(".left-side").mouseleave(function() {
+	$(".left-side-text").mouseleave(function() {
 		$(".welcome-left-text").fadeOut();
 		console.log("Fade")
 	})
 
-	$(".right-side").mouseenter(function() {
+	$(".right-side-text").mouseenter(function() {
 		$(".welcome-right-text").fadeIn();
 		console.log("Fade")
 	})
 
-	$(".right-side").mouseleave(function() {
+	$(".right-side-text").mouseleave(function() {
 		$(".welcome-right-text").fadeOut();
 		console.log("Fade")
 	})
