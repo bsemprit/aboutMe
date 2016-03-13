@@ -24,15 +24,26 @@
 
 
 .left-top {
-	background-image: url("../images/blpurple.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center bottom;
+	background-color: black;
 	height: 100vh;
 }
 
+.left-bianca-text {
+	margin-top: 10%;
+}
+
+.left-bianca-text img{
+	width: 30%;
+}
+
+
 .left-portfolio {
+	height: 70vh;
+	width: 100vw;
+	background-image: url("../images/randomTechBackground.jpg");
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: 100%;
 
 }
 

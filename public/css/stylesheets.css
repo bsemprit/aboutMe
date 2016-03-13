@@ -1,4 +1,5 @@
  @font-face { font-family: 'Rex'; src: url('../fonts/RexBold.otf'); } 
+ @font-face { font-family: 'Beyno'; src: url('../fonts/BEYNO.ttf'); } 
 
 
 
@@ -17,26 +18,21 @@
 
 .home-welcome {
 	position: absolute;
-	text-shadow: 3px 2px 1px white;
 	z-index: -1;
 }
 
 .bianca-text {
-
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
-.world-text {
-
-	font-size: 4rem;
-}
 
 .home-text {
-	font-family: 'Cinzel Decorative', serif;
+	font-family: "Beyno", serif;
+	text-shadow: 3px 2px 1px black;
 	font-weight: 700;
 }
 
-.left-side, .right-side, .left-side-text, .right-side-text {
+ .left-side-text, .right-side-text {
 	height: 100vh;
 	width: 50vh;
 	padding: 0 !important;
@@ -44,6 +40,8 @@
 }
 
 .right-side{
+	height: 100vh;
+	width: 50vh;
 	position: absolute;
 	background-color: black;
 	right: 0 !important;
@@ -83,28 +81,37 @@
 	font-family: 'Rex', serif; 
 }
 
-.enter-left-text, .enter-right-text {
+.enter-right-text {
+	font-size: 90px !important;
+}
+
+.welcome-right-text {
+	font-size: 40px !important;
+}
+
+.enter-left-text {
 	font-size: 50px !important;
-	background-color:rgba(0, 0, 0);
 }
 
 .enter-right {
 	top: 40vh;
 	right: 40%;
-	font-family: "Alex Brush", serif;
+	font-family: "Tangerine", serif;
 }
 
 .bits-background img {
 	opacity: 0.5;
-	height: 100%;
-	left: -32%;
+	height: 100vh;
+	width: 50vw;
+	left: 0;
 	position: absolute;
 	z-index: -3;
 }
 
 .right-background img {
 	opacity: 0.3;
-	height: 100%;
+	height: 100vh;
+	width: 50vw;
 	right: 0;	
 	position: absolute;
 	z-index: -5;
