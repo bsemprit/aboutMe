@@ -1,9 +1,12 @@
  @font-face { font-family: 'Rex'; src: url('../fonts/RexBold.otf'); } 
+ @font-face { font-family: 'Generica'; src: url('../fonts/Generica.otf'); } 
+ @font-face { font-family: 'Generica+Bold'; src: url('../fonts/GenericaBold.otf'); } 
 
   body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: "Generica", serif;
   }
 
   main {
@@ -16,14 +19,15 @@
 }
 
 .quote {
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	font-family: "Allura", serif;
 }
 
 
 .left-top {
+	background-image: url('../images/face.gif'), url('../images/faceleft.gif');
+	background-position: left, right;
+	background-repeat: no-repeat;
+	background-size: 40%;
 	background-color: black;
 	height: 100vh;
 }
@@ -36,6 +40,18 @@
 	width: 30%;
 }
 
+.left-skills {
+	background-image: url("../images/sodimanimshells.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	height: 100vh;
+	background-color: black;
+}
+
+.skills-buttons-left {
+	
+}
 
 .left-portfolio {
 	height: 70vh;
@@ -44,7 +60,10 @@
 	background-position: cover;
 	background-repeat: no-repeat;
 	background-size: 100%;
+}
 
+.left-divider {
+	margin: 2% 0;
 }
 
 .nav-bar {
@@ -81,12 +100,8 @@
 	position: relative;
 }
 
-.gamer {
-	position: relative;
-	top: 50%;
-	left: 10%;
-	width: 200px;
-	height: 100px;
+.project-left-details {
+	margin: 10% 0;
 }
 
 .macbook {
