@@ -21,10 +21,22 @@
 	z-index: -1;
 }
 
-.bianca-text {
-	font-size: 5rem;
+.bianca-text img{
+	width: 40%;
 }
 
+.design-text {
+	font-family: "Beyno", serif;
+	position: absolute;
+	top: 80vh;
+	width: 97%;
+	margin: 0;
+	padding: 0;
+}
+
+.move-text {
+	/*margin-left: 4em;*/
+}
 
 .home-text {
 	font-family: "Beyno", serif;
