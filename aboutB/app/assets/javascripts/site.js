@@ -1,5 +1,3 @@
-
-
 $(document).on("ready", function() {
 
 
@@ -26,6 +24,11 @@ $(document).on("ready", function() {
 		$(".welcome-right-text").fadeOut();
 		console.log("Fade")
 	})
+
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+	console.log('callback - particles.js config loaded');
+	});
 
 	// $('.nav-bar').pushpin({ top: $('.nav-bar').offset() });
 

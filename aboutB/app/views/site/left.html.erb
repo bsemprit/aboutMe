@@ -2,25 +2,71 @@
 
 <!-- Nav -->
 
-<div class="row nav-bar">
-		<%= image_tag "laptop.png", class: "computer-nav"%>
+
+
+
+
+<div class="row nav-bar z-depth-4">
+<div class="nav-bar-holder">
+	<%= image_tag "BiancaGeomCut.png", class: "nav-bianca-left"%>
+	
 	<div class="nav-text-holder inline">
-		<%= image_tag "blinkerGreen.gif", class: "blinker"%>
-		<span class="nav-text white-text inline">HOME</span>
+		<span class="nav-text blue-text"><h4>HOME</h4></span>
 	</div> 
 	<div class="center">
+		<ul class="blue-text list-holder-left">
+			<li class="list-item-left">
+				Home
+			</li>
+			<li class="list-item-left">
+				Skills
+			</li>
+			<li class="list-item-left">
+				Portfolio
+			</li> 	
+			<li class="list-item-left">
+				My Journey
+			</li>
+			<li class="list-item-left">
+				Contact me
+			</li>
+		</ul>
 	</div>
+
+	<%= image_tag "semprit.png", class: "semprit-left"%>
+</div>
 </div>
 
+<div class="background">
+	
+</div>
+
+<div class="stars" id="particles-js">
+	
+</div>
 
 <div class="row first-row">
 	<div class="col l12 left-top">
-		<div class="left-bianca-text center quote">
-			<span class="text-border"><%= image_tag "BiancaGeomCut.png"%></span><br>
-			<%= image_tag "divider.png", class: "left-divider"%><br>
-			<h5 class="white-text z-depth-4 center-align waves-effect waves-purple black">"I go to seek a great perhaps..." - Francois Rabelais</h3>
-		</div>
-		<div class="col l6 center quote">
+		<div class="left-bianca-text">
+			<div class="left-side-top">
+				<div class="center">
+					
+				<%#= image_tag "BiancaGeomCut.png"%> 
+
+				</div><br>
+				<div class="top-text-holder-left row">
+					<div class="col l8">
+						<h2 class="white-text flow-text summary-small-left">Hi! I'm Bianca and I am a web designer, junior full stack developer, and writer.</h2>
+						<h4 class="white-text flow-text summary-small-left">My passion is to help others through coding. I'm currently based in Miami, FL and an online student at Strayer University</h4>
+					</div>
+					<div class="col l4">
+						<%= image_tag "profile.jpg", class: "profile-left" %>
+					</div>
+					
+				</div>
+				<h4 class="white-text center-align quote">"I go to seek a great perhaps..." - Francois Rabelais</h4>
+				
+			</div>
 		</div>
 	</div>
 </div>
@@ -29,15 +75,35 @@
 
 <div class="row skills-row">
 	<div class="col l12 m12 s12 left-skills center">
-		<%= image_tag "carbonAtom.gif"%>
-		<div class="skills-buttons-left center">
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Javascript</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>HTML5/CSS3</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Ruby</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Ruby on Rails</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Linux</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>C++</a>
-			<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Photoshop</a>
+		<div class="border-left black-text">
+		<div class="center row skills-first-row">
+			<div class="javascript-left col offset-l1 l3">
+				<%= image_tag "javascript.png", class: "skills-image"%> 
+			            
+			</div>
+			<div class="html-left col l3">
+				<%= image_tag "CSS3_and_HTML5_badges.svg.png", class: "skills-image"%> 
+				
+			</div>
+			<div class="Ruby-left col l3">
+				<%= image_tag "ruby.png", class: "skills-image"%> 
+				
+			</div>
+		</div>
+		<div class="center row">
+			<div class="rails-left col offset-l1 l3">
+				<%= image_tag "blurred-abstract.jpg", class: "skills-image"%> 
+				
+			</div>
+			<div class="linux-left col l3">
+				<%= image_tag "ubuntu.png", class: "skills-image"%> 
+				
+			</div>
+			<div class="c++-left col l3">
+				<%= image_tag "cplusplus.png", class: "skills-image"%> 
+				
+			</div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -69,24 +135,26 @@
 
 <div class="row">
 	<div class="col l12 s12 m12 left-resume">
-		<h2 class="white-text center-align"><span class="text-border">Resume</span></h2>
+		<h2 class="white-text">My Journey...</h2>
 		<div class="parts-resume-left">
 			<div class="row">
 				<div class="col l10 m10 s10 push-l1 push-s1 push-m1">
 					<div class="row">
-						<div class="col l2 s3 m3">
-							<h5 class="white-text">EDUCATION</h5>
+						<div class="col l12 s12 m12 center-align">
+							<h3 class="white-text">I'm constantly learning</h3>
 						</div>
-						<div class="col l8 s6 m6 ">
+					</div>
+
+					<div class="row ironhack-resume-left blue lighten-2">
+						<div class="col push-l2 push-s2 push-m2 l8 s8 m8 ">
 							<h5 class="white-text">
 								<strong>Ironhack</strong>
 							</h5>
 							<p class="white-text">
 								Full-stack Web Development Bootcamp (400+ hours)
 								<br>                                    
-								Clean code principles, design patterns, and test driven development (TDD)
-								<br>                                    
-								Technologies taught: JavaScript, HTML, CSS, Ruby, Ruby on Rails, MySQL, jQuery, Heroku
+								                                  
+								What I learned: JavaScript, HTML, CSS, Ruby, Ruby on Rails, MySQL, jQuery, Heroku
 								<br>                                    
 								<br>                                    
 
@@ -94,16 +162,10 @@
 								<br>                                    
 								Named top 5 projects by Tech panel judges and Most Technically Complex - Ironhack Hackshow
 								<br>                                    
-								Technologies: Javascript, Heroku, HTML5, CSS, Ruby on Rails, Ruby, JQuery, APIs
+								I used Javascript, Heroku, HTML5, CSS, Ruby on Rails, Ruby, JQuery, and APIs
 							</p>
 
 							<hr>
-						</div>
-						<div class="col l2 m3 s3">
-							<p class="white-text">
-								January 2016 - March 2016
-							</p>
-							
 						</div>
 						
 					</div>
