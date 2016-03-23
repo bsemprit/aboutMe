@@ -1,5 +1,6 @@
  @font-face { font-family: 'Rex'; src: url(<%= asset_path 'RexBold.otf' %>); } 
 
+
   body {
     display: flex;
     min-height: 100vh;
@@ -17,8 +18,12 @@
   	width: 100%;
   	position: fixed;
   	height: 100vh;
-  	background-image: url('galaxy.jpg');
- 	background-size: 100%;
+  	background-image: url('galaxygirl.jpg');
+ 	background-position: center;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-repeat: no-repeat;
+
   }
 
   .stars {
@@ -46,8 +51,13 @@
 }
 
 .list-holder-left {
-	margin-top: 50%;
 	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.list-holder-left li a {
+	color: white;
+	font-weight: 600;
 }
 
 .list-item-left {
@@ -77,6 +87,32 @@
 	position: relative;
 }
 
+.icons-left i{
+	margin-left: 20px;
+	z-index: 20;
+	position: relative;
+}
+
+ .icons-left {
+ 	z-index: 20;
+ 	position: absolute;
+ 	bottom: 25vh;
+ 	left: 35vw;
+ }
+
+ .icons-holder {
+ 	position: absolute;
+ 	z-index: 11;
+ 	width: 100%;
+ }
+
+.icons-left a {
+ 	z-index: 20;
+ 	position: relative;
+ 	color: white !important;
+ 	font-weight: 600;
+ }
+
 .left-bianca-text {
 	margin-top: 2vh;
 	border: 1px solid rgba(255, 255, 255, 0.2) ;
@@ -91,9 +127,8 @@
 
 .border-left-skills {
 	margin-top: 2vh;
-	padding-top: 10vh;
+	padding-top: 2vh;
 	border: 1px solid rgba(0, 0, 0, 0.2) ;
-	height: 95vh;
 	margin-bottom: 2vh;
 }
 
@@ -110,8 +145,10 @@
 
 .summary-small-left {
 	/*font-family: 'Rex';*/
-	font-size: 40px;
+	font-size: 25px;
 	margin-left: 10%;
+	margin-top: 20vh;
+	background-color: rgba(0,0,0,0.5);
 }
 
 .semprit-left {
@@ -122,33 +159,39 @@
 
 .skills-first-row {
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .left-skills {
 	position: relative;
-	background-color: rgba(24, 142, 181, 1);
+	background-color: rgba(63,80,165, 0.5);
 }
 
 .skills-row {
 	margin-bottom: 0;
+	margin-top: 10vh;
 }
 
 .skills-image {
-	height: 100px;
+	height: 50px;
 }
 
 .skills-text {
-	font-size: 22px;
+	font-weight: 300;
+	font-size: 24px;
+	font-family: "Josefin Sans", "Poiret One", Roboto;
 }
 
 .left-portfolio {
-	height: 70vh;
+	/*height: 70vh;*/
 	width: 100vw;
-	background-image: url(<%= asset_path 'randomTechBackground.jpg' %>);
+	/*background-image: url(<%#= asset_path 'randomTechBackground.jpg' %>);*/
 	background-position: cover;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	position: relative;
+	margin-top: 5%;
 }
 
 .left-divider {
@@ -158,25 +201,19 @@
 .nav-bar {
 	position: fixed;
 	right: 3%;
-	top: 0 !important;
+	top: 30vh;
 	z-index: 20;
 	width: 10vw;
-	height: 70vh;
-	margin-top: 2%;
-}
-
-.nav-bar-holder {
-	background-image: url(<%= asset_path 'geometry.gif' %>);
+	/*height: 70vh;*/
+	/*margin-top: 8%;*/
+	margin-bottom: 0;
 	background-color: rgba(0, 0, 0, 0.9);
-	background-attachment: fixed;
-	background-size: 13%;
-	background-position: 98% 15%;
-	background-repeat: no-repeat; 
+	padding-bottom: 20px;
 }
 
 .nav-text-holder {
-	margin-top: 50%;
 	margin-left: 20%;
+	color: #3f50a5;
 }
 
 .nav-bianca-left {
@@ -192,13 +229,19 @@
 
 .projects-holder {
 	position: relative;
+	margin-top: 10%;
 }
 
 .project-left-details {
-	margin: 10% 0;
+	margin-top: 25%;
+	margin-bottom: 15%;
 	position: relative;
 	z-index: 11;
 	font-size: 20px !important;
+}
+
+.card-action {
+	padding: 5px !important;
 }
 
 .ironhack-details {
@@ -206,11 +249,15 @@
 }
 
 a.final-project-link {
-	color: black !important;
+	color: deepskyblue !important;
 }
 
 a.final-project-link:hover {
-	color: red !important;
+	color: white !important;
+}
+
+a.final-project-link:visited, a.final-project-link:active  {
+	color: chartreuse !important;
 }
 
 .macbook {
@@ -219,15 +266,6 @@ a.final-project-link:hover {
 	left: 10%;
 	width: 400px;
 	height: 200px;
-}
-
-.left-resume {
-	background-color: black;
-	background-image: url(<%= asset_path 'pcTop.png' %>);
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: 60vw;
-	background-attachment: local;
 }
 
 .enter-row {
@@ -245,10 +283,19 @@ a.final-project-link:hover {
 	font-size: 18px;
 }
 
-.ironhack-resume-left {
-	/*background-color: black;
-	background-image: url(<%= asset_path 'movegeo.gif' %>);
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: local;*/
+.loader {
+	transform: rotate(90deg);
+}
+
+.loaders-holder {
+	min-height: 150px;
+}
+
+.left-resume {
+	position: relative;
+}
+
+.yea {
+	z-index: 100;
+	position: relative;
 }

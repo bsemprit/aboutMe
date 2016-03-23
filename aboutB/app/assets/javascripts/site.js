@@ -31,5 +31,9 @@ $(document).on("ready", function() {
 	});
 
 	// $('.nav-bar').pushpin({ top: $('.nav-bar').offset() });
+	$(".yea").click(function(){
+	    $('.ubuntu').addClass('animated slideInRight')
+	})
+		
 
 })

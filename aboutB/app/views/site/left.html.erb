@@ -7,33 +7,26 @@
 
 
 <div class="row nav-bar z-depth-4">
-<div class="nav-bar-holder">
-	<%= image_tag "BiancaGeomCut.png", class: "nav-bianca-left"%>
-	
-	<div class="nav-text-holder inline">
-		<span class="nav-text blue-text"><h4>HOME</h4></span>
-	</div> 
+	<div class="nav-bar-holder">
 	<div class="center">
-		<ul class="blue-text list-holder-left">
+		<ul class="list-holder-left">
 			<li class="list-item-left">
-				Home
+				<a href="#home"> Home </a> 
 			</li>
 			<li class="list-item-left">
-				Skills
+				<a href="#skills"> Skills </a>
 			</li>
 			<li class="list-item-left">
-				Portfolio
+				<a href="#portfolio"> Portfolio </a>
 			</li> 	
 			<li class="list-item-left">
-				My Journey
+				<a href="#journey"> My Journey </a>
 			</li>
 			<li class="list-item-left">
-				Contact me
+				<a href="#contact"> Contact me </a>
 			</li>
 		</ul>
 	</div>
-
-	<%= image_tag "semprit.png", class: "semprit-left"%>
 </div>
 </div>
 
@@ -45,22 +38,13 @@
 	
 </div>
 
-<div class="row first-row">
+<div class="row first-row" id="home">
 	<div class="col l12 left-top">
 		<div class="left-bianca-text">
 			<div class="left-side-top">
-				<div class="center">
-					
-				<%#= image_tag "BiancaGeomCut.png"%> 
-
-				</div><br>
 				<div class="top-text-holder-left row">
-					<div class="col l8">
-						<h2 class="white-text flow-text summary-small-left">Hi! I'm Bianca and I am a web designer, junior full stack developer, and writer.</h2>
-						<h4 class="white-text flow-text summary-small-left">My passion is to help others through coding. I'm currently based in Miami, FL and an online student at Strayer University</h4>
-					</div>
-					<div class="col l4">
-						<%= image_tag "profile.jpg", class: "profile-left" %>
+					<div class="col l10 ">
+						<h2 class="white-text flow-text summary-small-left">Hi! I'm Bianca and I am a web designer, junior full stack developer, and writer. My passion is to help others through coding. I'm currently based in Miami, FL and an online student at Strayer University</h4>
 					</div>
 					
 				</div>
@@ -70,11 +54,17 @@
 		</div>
 	</div>
 </div>
+<div class="col l12 icons-holder">
+	<p class="white-text fa-2x icons-left">
+		<a href="https://www.github.com/bsemprit"><i class="fa fa-github-alt"></i></a> <a href="www.linkedin.com/in/bsemprit"><i class="fa fa-linkedin-square"></i></a><a href="https://twitter.com/bsemprit"><i class="fa fa-twitter"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
+
+	</p>
+</div>
 
 <!-- Skills -->
 
 <div class="row skills-row">
-	<div class="col l12 m12 s12 left-skills center">
+	<div class="col l12 m12 s12 left-skills center" id="skills">
 		<div class="white-text border-left-skills">
 		<div class="center row skills-first-row">
 			<h3 >Skills </h3>
@@ -98,19 +88,11 @@
 				
 			</div>
 			<div class="linux-left col l2">
-				<%= image_tag "ubuntu.png", class: "skills-image"%> 
+				<%= image_tag "ubuntu.png", class: "skills-image ubuntu"%> 
 				
 			</div>
 			<div class="c++-left col l2">
 				<%= image_tag "cplusplus.png", class: "skills-image"%> 
-				
-			</div>
-		</div>
-		<div class="row">
-			<div class="col offset-l1 l9">
-				<p class="skills-text left-align">
-					I first learned about HTML when frontpage (yeah that...) and reading the source of a website was the way to learn how to program. In Broward College I learned <strong>C++</strong> and the basics of Computer Science. Throughout my experiences I dual booted with Windows 7/10 and Ubuntu. I wanted to learn more, so I attended Ironhack, a programming bootcamp, where I learned Ruby, Javascript, Ruby on Rails and furthered my knowledge in HTML5 and CSS3.  
-				</p>
 				
 			</div>
 		</div>
@@ -120,21 +102,24 @@
 
 <!-- Projects -->
 <div class="row">
-	<div class="col l12 s12 m12 left-portfolio purple darken-1">
-		<div class="col l4 s4 m4">
-			<h3 class="center-align"> <span class="text-border"> Projects: </span></h3>
+	<div class="col l12 s12 m12 left-portfolio white-text">
+		<div class="col push-l2 l4 s4 m4">
+			<h2> <span class="purple darken-1" id="portfolio">Portfolio</span></h2>
 			<div class="projects-holder">
-		<%= image_tag "macbook.png", class: "macbook"%>
+				<%= image_tag "macbook.png", class: "macbook"%>
 			</div>
 		</div>
 		<div class="col l8 s8 m8">
-			<div class="card yellow darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
-	            <div class="card-content black-text">
+			<div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
+	            <div class="card-content">
 	              <span class="card-title ironhack-details"> Ironhack Final Project</span>
 	              <p class="">This project allows people to give back without taking money from them. Instead, spend some time sitting at a computer doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
 	            </div>
 	            <div class="card-action">
-	              <a href="https://mighty-bastion-71330.herokuapp.com/" class="final-project-link">Final Project</a>
+	              <p>
+	              Check out my...	
+	              <a href="https://mighty-bastion-71330.herokuapp.com/" target="_blank" class="final-project-link">Final Project</a>
+	              </p>
 	            </div>
             </div>
 		</div>
@@ -145,18 +130,27 @@
 
 <div class="row">
 	<div class="col l12 s12 m12 left-resume">
-		<h2 class="white-text">My Journey...</h2>
+		<h2 class="white-text" id="journey">My Journey...</h2>
 		<div class="parts-resume-left">
 			<div class="row">
-				<div class="col l10 m10 s10 push-l1 push-s1 push-m1">
+				<div class="col l12 m10 s10">
 					<div class="row">
 						<div class="col l12 s12 m12 center-align">
-							<h3 class="white-text">I'm constantly learning</h3>
+							<h3 class="white-text">I'm constantly learning....</h3>
 						</div>
 					</div>
 
-					<div class="row ironhack-resume-left blue lighten-2">
-						<div class="col push-l2 push-s2 push-m2 l8 s8 m8 ">
+					<div class="row ironhack-resume-left">
+						<div class="col offset-l1  l3 s3 m3 ">
+							<h5 class="white-text">
+								<strong>Strayer University</strong>
+							</h5>
+							<p class="white-text">
+								Pursuing Bachelors in Computer Science        
+								Online - Expected Dec. 2018
+							</p>
+						</div>
+						<div class="col l3 s3 m3 ">
 							<h5 class="white-text">
 								<strong>Ironhack</strong>
 							</h5>
@@ -165,88 +159,113 @@
 								<br>                                    
 								                                  
 								What I learned: JavaScript, HTML, CSS, Ruby, Ruby on Rails, MySQL, jQuery, Heroku
-								<br>                                    
-								<br>                                    
-
-								Ironhack Final Project: <a href="https://mighty-bastion-71330.herokuapp.com/_blank">Final Project</a>  - Integration of  ads into retro style games
-								<br>                                    
-								Named top 5 projects by Tech panel judges and Most Technically Complex - Ironhack Hackshow
-								<br>                                    
-								I used Javascript, Heroku, HTML5, CSS, Ruby on Rails, Ruby, JQuery, and APIs
 							</p>
 
-							<hr>
 						</div>
-						
-					</div>
-
-					<div class="row">
-						<div class="col l2 s3 m3">
-						.
-						</div>
-
-						<div class="col l8 s6 m6 ">
-							<h5 class="white-text">
-								<strong>Strayer University</strong>
-							</h5>
-							<p class="white-text">
-								Pursuing Bachelors in Computer Science        
-							</p>
-							<hr>
-						</div>
-
-						<div class="col l2 m3 s3">
-							<p class="white-text">
-								Online - Expected Dec. 2018
-							</p>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col l2 s3 m3">
-						.
-						</div>
-
-						<div class="col l8 s6 m6 ">
+						<div class="col l3 s3 m3 ">
 							<h5 class="white-text">
 								<strong>Broward College</strong>
 							</h5>
 							<p class="white-text">
 								Associates of Science in Computer Engineering
+								<br>
+								What I learned: C++
 							</p>
-							<hr>
+						</div>
+						
+
+					</div>
+
+					<!-- <div class="row loaders-holder">
+						<div class="col offset-l1 l3 s3 m3 right-align loaders-holder">
+						<br>
+						<br>
+						<br>
+						</div>
+						<div class="col l3 s3 m3 loaders-holder center-align">
+							<br>
+							<%#= image_tag "294.gif", class: "loader"%>
+						<br>
+							<%#= image_tag "294.gif", class: "loader"%>
+						<br>
+							<%#= image_tag "294.gif", class: "loader"%>
+						
+						</div>
+						<div class="col l3 s3 m3 left-align loaders-holder">
+							
+							<br>
+						<br>
+						<br>
+						
+						</div>
+					</div> -->
+
+					<div class="row center white-text">
+						<div class="col l11 s11 m11 ">
+							<%= image_tag "brainwhite1.png" %>
+							<h3>And applying myself...</h3>
+						</div>
+					</div>
+					
+					<div class="row white-text">
+						<div class="col offset-l1 l3 s3 m3 ">
+						<h5 class="white-text">
+							<strong>Code Explorers</strong>
+						</h5>
+						<p>
+							I was a student teacher of grades K-12. We delved into robotics, mobile applications, and web design using block coding. The experience was just as rewarding for the students as it was for me as I quickly learned and created exercises for them. 
+						</p>
+
+						</div>
+						<div class="col l3 s3 m3">
+						<h5 class="white-text">Dynabilt Technologies Corp. </h5> 
+
+						<p>
+							Being project manager at Dynabilt changed me substancially. I was able to experiment and make their website, manage multiple projects, and grow with the company. 
+						</p>
+
+						</div>
+						<div class="col l3 s3 m3 ">
+							<h5>
+								<strong>Ironhack Teaching Assistant</strong>
+							</h5>
+
+							<p>
+								Assisting students in their journey to discover coding has been the most rewarding experience. I've discovered new ways to produce a similar outcome, taught others how to think to find new answers, and learned more then a classroom could teach me in from wonderful students. 
+							</p>
+						</div>
+					</div>
+
+					<div class="row white-text">
+						<div class="col l11 s11 m11 center-align">
+							<h3>While having fun...</h3>
+						</div>
+					</div>
+
+					<div class="row white-text">
+						<div class="col offset-l1 l3 m3 s3">
+							<h5>
+								I write poetry
+							</h5>
 						</div>
 
-						<div class="col l2 m3 s3">
-							<p class="white-text">
-								Jun. 2013 - Dec. 2015
-							</p>
+						<div class="col l3 m3 s3">
+							<h5>
+								Code while sleeping
+							</h5>
 						</div>
+
+						<div class="col l3 m3 s3">
+							<h5>
+								Reading all day
+							</h5>
+						</div>
+					</div>
+
+
 					</div>
 				
 				</div>
 			</div>
-
-            <div class="row enter-row center">
-            	<h4 class="left-press-enter green-text">Press Enter</h4>
-            </div>
 		</div>
 	</div>
-</div>
-
-</main>
-<footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l12 s12">
-                <h5 class="white-text">Bianca Semprit</h5>
-                <p class="grey-text text-lighten-4">Form goes here eventually</p>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2016 Copyright Text
-            </div>
-          </div>
-</footer>
