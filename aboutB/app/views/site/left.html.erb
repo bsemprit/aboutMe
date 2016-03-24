@@ -43,8 +43,8 @@
 		<div class="left-bianca-text">
 			<div class="left-side-top">
 				<div class="top-text-holder-left row">
-					<div class="col l10 ">
-						<h2 class="white-text flow-text summary-small-left">Hi! I'm Bianca and I am a web designer, junior full stack developer, and writer. My passion is to help others through coding. I'm currently based in Miami, FL and an online student at Strayer University</h4>
+					<div class="col l8">
+						<h2 class="white-text flow-text summary-small-left left-align">Hi! I'm Bianca<br>A web designer, developer, a writer. <br><br> Let's go on a journey...</h4>
 					</div>
 					
 				</div>
@@ -54,151 +54,80 @@
 		</div>
 	</div>
 </div>
-<div class="col l12 icons-holder">
+
+<div class="col push-l1 push-m5 push-s5 l2 m2 s2 down-arrow-holder">
+	<%= image_tag "downWhite.png", class: "down-arrow" %>
+</div>
+<!-- <div class="col l12 icons-holder">
 	<p class="white-text fa-2x icons-left">
 		<a href="https://www.github.com/bsemprit"><i class="fa fa-github-alt"></i></a> <a href="www.linkedin.com/in/bsemprit"><i class="fa fa-linkedin-square"></i></a><a href="https://twitter.com/bsemprit"><i class="fa fa-twitter"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
 
 	</p>
-</div>
-
-<!-- Skills -->
-
-<div class="row skills-row">
-	<div class="col l12 m12 s12 left-skills center" id="skills">
-		<div class="white-text border-left-skills">
-		<div class="center row skills-first-row">
-			<h3 >Skills </h3>
-
-		</div>
-		<div class="center row">
-			<div class="javascript-left col l2">
-				<%= image_tag "javascript.png", class: "skills-image"%> 
-			            
-			</div>
-			<div class="html-left col l2">
-				<%= image_tag "CSS3_and_HTML5_badges.svg.png", class: "skills-image"%> 
-				
-			</div>
-			<div class="Ruby-left col l2">
-				<%= image_tag "ruby.png", class: "skills-image"%> 
-				
-			</div>
-			<div class="rails-left col l2">
-				<%= image_tag "blurred-abstract.jpg", class: "skills-image"%> 
-				
-			</div>
-			<div class="linux-left col l2">
-				<%= image_tag "ubuntu.png", class: "skills-image ubuntu"%> 
-				
-			</div>
-			<div class="c++-left col l2">
-				<%= image_tag "cplusplus.png", class: "skills-image"%> 
-				
-			</div>
-		</div>
-		</div>
-	</div>
-</div>
-
-<!-- Projects -->
-<div class="row">
-	<div class="col l12 s12 m12 left-portfolio white-text">
-		<div class="col push-l2 l4 s4 m4">
-			<h2> <span class="purple darken-1" id="portfolio">Portfolio</span></h2>
-			<div class="projects-holder">
-				<%= image_tag "macbook.png", class: "macbook"%>
-			</div>
-		</div>
-		<div class="col l8 s8 m8">
-			<div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
-	            <div class="card-content">
-	              <span class="card-title ironhack-details"> Ironhack Final Project</span>
-	              <p class="">This project allows people to give back without taking money from them. Instead, spend some time sitting at a computer doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
-	            </div>
-	            <div class="card-action">
-	              <p>
-	              Check out my...	
-	              <a href="https://mighty-bastion-71330.herokuapp.com/" target="_blank" class="final-project-link">Final Project</a>
-	              </p>
-	            </div>
-            </div>
-		</div>
-	</div>
-</div>
+</div> -->
 
 <!-- Resume -->
 
-<div class="row">
-	<div class="col l12 s12 m12 left-resume">
-		<h2 class="white-text" id="journey">My Journey...</h2>
+<div class="row second-row">
+	<div class="col l12 s12 m12 left-resume second-row">
+		<div class="row second-row">
+						<div class="col l12 s12 m12 center-align journey-section">
+							<h2 class="white-text" id="journey">My Journey...</h2>
+						</div>
+		</div>
 		<div class="parts-resume-left">
 			<div class="row">
 				<div class="col l12 m10 s10">
+					
+
 					<div class="row">
-						<div class="col l12 s12 m12 center-align">
+						<div class="col l12 s12 m12 center-align learning-top">
 							<h3 class="white-text">I'm constantly learning....</h3>
 						</div>
 					</div>
 
-					<div class="row ironhack-resume-left">
-						<div class="col offset-l1  l3 s3 m3 ">
-							<h5 class="white-text">
+					<div class="row ironhack-resume-left white-text">
+						<div class="col offset-l1  l3 s3 m3 strayer-holder">
+							<h5 class="strayer-text center">
 								<strong>Strayer University</strong>
 							</h5>
-							<p class="white-text">
+							<p class="strayer-info">
 								Pursuing Bachelors in Computer Science        
 								Online - Expected Dec. 2018
 							</p>
+							<div class="strayer-hover center">
+								<%= image_tag "downWhite.png", class: "strayer-arrow animated infinite bounce" %>
+							</div>
 						</div>
-						<div class="col l3 s3 m3 ">
-							<h5 class="white-text">
+						<div class="col l3 s3 m3 ironhack-holder">
+							<h5 class="ironhack-text center">
 								<strong>Ironhack</strong>
 							</h5>
-							<p class="white-text">
+							<p class="ironhack-info">
 								Full-stack Web Development Bootcamp (400+ hours)
 								<br>                                    
-								                                  
 								What I learned: JavaScript, HTML, CSS, Ruby, Ruby on Rails, MySQL, jQuery, Heroku
 							</p>
+							<div class="ironhack-hover center">
+								<%= image_tag "downWhite.png", class: "ironhack-arrow animated infinite bounce" %>
+							</div>
 
 						</div>
-						<div class="col l3 s3 m3 ">
-							<h5 class="white-text">
+						<div class="col l3 s3 m3 broward-holder">
+							<h5 class="broward-text center">
 								<strong>Broward College</strong>
 							</h5>
-							<p class="white-text">
+							<p class="broward-info">
 								Associates of Science in Computer Engineering
 								<br>
 								What I learned: C++
 							</p>
+							<div class="broward-hover center">
+								<%= image_tag "downWhite.png", class: "broward-arrow animated infinite bounce" %>
+							</div>
 						</div>
 						
 
 					</div>
-
-					<!-- <div class="row loaders-holder">
-						<div class="col offset-l1 l3 s3 m3 right-align loaders-holder">
-						<br>
-						<br>
-						<br>
-						</div>
-						<div class="col l3 s3 m3 loaders-holder center-align">
-							<br>
-							<%#= image_tag "294.gif", class: "loader"%>
-						<br>
-							<%#= image_tag "294.gif", class: "loader"%>
-						<br>
-							<%#= image_tag "294.gif", class: "loader"%>
-						
-						</div>
-						<div class="col l3 s3 m3 left-align loaders-holder">
-							
-							<br>
-						<br>
-						<br>
-						
-						</div>
-					</div> -->
 
 					<div class="row center white-text">
 						<div class="col l11 s11 m11 ">
@@ -269,3 +198,69 @@
 			</div>
 		</div>
 	</div>
+
+<!-- Skills -->
+
+<div class="row skills-row">
+	<div class="col l12 m12 s12 left-skills center" id="skills">
+		<div class="white-text border-left-skills">
+		<div class="center row skills-first-row">
+			<h3 >Skills </h3>
+
+		</div>
+		<div class="center row">
+			<div class="javascript-left col l2">
+				<%= image_tag "javascript.png", class: "skills-image"%> 
+			            
+			</div>
+			<div class="html-left col l2">
+				<%= image_tag "CSS3_and_HTML5_badges.svg.png", class: "skills-image"%> 
+				
+			</div>
+			<div class="Ruby-left col l2">
+				<%= image_tag "ruby.png", class: "skills-image"%> 
+				
+			</div>
+			<div class="rails-left col l2">
+				<%= image_tag "blurred-abstract.jpg", class: "skills-image"%> 
+				
+			</div>
+			<div class="linux-left col l2">
+				<%= image_tag "ubuntu.png", class: "skills-image ubuntu"%> 
+				
+			</div>
+			<div class="c++-left col l2">
+				<%= image_tag "cplusplus.png", class: "skills-image"%> 
+				
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- Projects -->
+<div class="row">
+	<div class="col l12 s12 m12 left-portfolio white-text">
+		<div class="col push-l2 l4 s4 m4">
+			<h2> <span class="purple darken-1" id="portfolio">Portfolio</span></h2>
+			<div class="projects-holder">
+				<%= image_tag "macbook.png", class: "macbook"%>
+			</div>
+		</div>
+		<div class="col l8 s8 m8">
+			<div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
+	            <div class="card-content">
+	              <span class="card-title ironhack-details"> Ironhack Final Project</span>
+	              <p class="">This project allows people to give back without taking money from them. Instead, spend some time sitting at a computer doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
+	            </div>
+	            <div class="card-action">
+	              <p>
+	              Check out my...	
+	              <a href="https://mighty-bastion-71330.herokuapp.com/" target="_blank" class="final-project-link">Final Project</a>
+	              </p>
+	            </div>
+            </div>
+		</div>
+	</div>
+</div>
+

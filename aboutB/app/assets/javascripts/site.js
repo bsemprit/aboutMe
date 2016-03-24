@@ -29,11 +29,17 @@ $(document).on("ready", function() {
 	particlesJS.load('particles-js', 'assets/particles.json', function() {
 	console.log('callback - particles.js config loaded');
 	});
-
-	// $('.nav-bar').pushpin({ top: $('.nav-bar').offset() });
-	$(".yea").click(function(){
-	    $('.ubuntu').addClass('animated slideInRight')
+	
+	$('.strayer-holder').hover(function(){
+		$('.strayer-info').addClass('animated slideInUp');
 	})
-		
+
+	$('.ironhack-holder').hover(function(){
+		$('.ironhack-info').addClass('animated slideInUp');
+	})
+
+	$('.broward-holder').hover(function(){
+		$('.broward-info').addClass('animated slideInUp');
+	})
 
 })

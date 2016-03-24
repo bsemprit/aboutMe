@@ -16,8 +16,8 @@
   .background {
   	z-index: 0;
   	width: 100%;
-  	position: fixed;
   	height: 100vh;
+  	position: absolute;
   	background-image: url('galaxygirl.jpg');
  	background-position: center;
  	background-size: cover;
@@ -39,15 +39,18 @@
 }
     
 
-.first-row {
+.first-row{
 	margin-bottom: 0 !important;
 }
+
+
 
 .quote {
 	font-family: "Allura", serif;
 	position: absolute;
 	bottom: 0;
-	left: 60vh;
+	right: 0;
+	margin-right: 2%;
 }
 
 .list-holder-left {
@@ -69,10 +72,80 @@
 	padding-top: 5%;
 }
 
-.profile-left {
-	width: 60% !important;
-	z-index: 11;
+.second-row {
+	padding: 0 !important;
+	position: relative;
 }
+
+.left-resume {
+	position: relative;
+	background-color: #1C1C1C;
+	background-image: url(<%= asset_path 'blurred-abstract.jpg' %>);
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin: 0;
+
+}
+
+.parts-resume-left {
+	font-family: 'Poiret One';
+	font-size: 18px;
+	position: relative;
+}
+
+.journey-section {
+	background-color: black;
+	background-image: url(<%= asset_path 'journeymove.jpg' %>);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	height: 40vh;
+	padding-top: 10vh !important;
+}
+
+.ironhack-resume-left {
+	background-color: rgba(0,0,0,0.7);
+	position: relative;
+	z-index: 11;
+	height: 300px;
+	padding-top: 50px;
+}
+
+.strayer-text, .ironhack-text, .broward-text {
+	position: relative;
+}
+
+.strayer-info, .ironhack-info, .broward-info {
+	position: relative;
+	display: none;
+}
+
+.strayer-hover, .ironhack-hover, .broward-hover {
+	position: relative;
+	margin-top: 50px;
+}
+
+.strayer-arrow, .ironhack-arrow, .broward-arrow{
+	width: 30px;
+	margin-top: 50px;
+}
+
+.strayer-holder, .ironhack-holder, .broward-holder {
+	min-height: 100%;
+}
+
+.strayer-holder:hover .strayer-hover, .ironhack-holder:hover .ironhack-hover, .broward-holder:hover .broward-hover {
+	display: none;
+}
+
+.strayer-holder:hover .strayer-info, .ironhack-holder:hover .ironhack-info, .broward-holder:hover .broward-info {
+	display: block;
+	transition: all .3 ease-in;
+}
+
 
 
 .left-top {
@@ -85,6 +158,19 @@
 	z-index: 5;
 	height: 100vh;
 	position: relative;
+}
+
+.down-arrow-holder {
+	position: absolute;
+	bottom: 20vh;
+	width: 100%;
+}
+
+.down-arrow {
+	z-index: 11;
+	position: relative;
+	width: 80px;
+	left: 20vw;
 }
 
 .icons-left i{
@@ -132,6 +218,8 @@
 	margin-bottom: 2vh;
 }
 
+
+
 .left-side-top {
 	padding-top: 5%;
 	margin-bottom: auto;
@@ -145,16 +233,16 @@
 
 .summary-small-left {
 	/*font-family: 'Rex';*/
-	font-size: 25px;
+	font-size: 40px;
 	margin-left: 10%;
-	margin-top: 20vh;
-	background-color: rgba(0,0,0,0.5);
+	margin-top: 10vh;
+	/*background-color: rgba(0,0,0,0.5);*/
 }
 
-.semprit-left {
-	background-color: rgba(0, 0, 0, 0.7);
-	border-top: 1px solid purple;
-	width: 10vw;
+
+
+.learning-top {
+	margin-top: 50px;
 }
 
 .skills-first-row {
@@ -278,11 +366,6 @@ a.final-project-link:visited, a.final-project-link:active  {
 	padding: 5px;
 }
 
-.parts-resume-left {
-	font-family: 'Poiret One';
-	font-size: 18px;
-}
-
 .loader {
 	transform: rotate(90deg);
 }
@@ -291,9 +374,7 @@ a.final-project-link:visited, a.final-project-link:active  {
 	min-height: 150px;
 }
 
-.left-resume {
-	position: relative;
-}
+
 
 .yea {
 	z-index: 100;
