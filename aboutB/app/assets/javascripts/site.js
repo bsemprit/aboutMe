@@ -42,4 +42,6 @@ $(document).on("ready", function() {
 		$('.broward-info').addClass('animated slideInUp');
 	})
 
+
+
 })

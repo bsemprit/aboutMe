@@ -18,6 +18,7 @@
   	width: 100%;
   	height: 100vh;
   	position: absolute;
+  	background-color: black;
   	background-image: url('galaxygirl.jpg');
  	background-position: center;
  	background-size: cover;
@@ -37,44 +38,108 @@
 .navbar-fixed {
 	position: absolute !important;
 }
+
+
+.nav-bar {
+	position: fixed;
+	right: 30px;	
+	top: 0;
+	z-index: 20;
+	width: 150px;
+	min-width: 50px;
+	height: 100vh;
+	/*margin-top: 8%;*/
+	margin-bottom: 0;
+	border-left: 1px solid purple;
+	border-right: 1px solid purple;
+	/*Fallback to black*/
+	background-color: rgba(0, 0, 0, 0.7);
+	
+	  /* Safari 5.1, Chrome 10+ */
+	  /*background: -webkit-linear-gradient(top,  rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));*/
+
+	  /* Firefox 3.6+ */
+	  background: -moz-linear-gradient(top,  rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));
+
+	  /* IE 10 */
+	  background: -ms-linear-gradient(top,  rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));
+
+	  /* Opera 11.10+ */
+	  background: -o-linear-gradient(top,  rgba(85, 103, 237, 0.7),  rgba(0, 0, 0, 0.7));
+	padding-bottom: 20px;
+}
     
 
-.first-row{
-	margin-bottom: 0 !important;
-}
 
-
-
-.quote {
-	font-family: "Allura", serif;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-right: 2%;
-}
 
 .list-holder-left {
 	font-size: 20px;
 	margin-bottom: 0;
+	margin-top: 30vh;
+	position: fixed;
 }
 
 .list-holder-left li a {
 	color: white;
 	font-weight: 600;
+	margin-left: 5px;
+}
+
+.list-holder-left li a i {
+	font-weight: normal;
+	font-size: 15px;
 }
 
 .list-item-left {
-	margin-top: 10%;
+	margin-top:20px;
+}
+
+.first-row{
+	margin-bottom: 0 !important;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.left-top {
+	/*background-image: url(<%= asset_path 'blurred-abstract.jpg' %>);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: #64b5f6;*/
+	z-index: 5;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+
+.left-side-top {
+	margin-bottom: 0;
+	height: 100vh;
+	position: relative;
+}
+
+.quote {
+	font-family: "Allura", serif;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	z-index: 11;
+	margin-left: 2%;
 }
 
 
 .top-text-holder-left{
 	padding-top: 5%;
+	min-height: 80%;
 }
 
 .second-row {
 	padding: 0 !important;
 	position: relative;
+	margin-bottom: 0;
 }
 
 .left-resume {
@@ -93,6 +158,7 @@
 	font-family: 'Poiret One';
 	font-size: 18px;
 	position: relative;
+	margin-bottom: 0;
 }
 
 .journey-section {
@@ -146,23 +212,24 @@
 	transition: all .3 ease-in;
 }
 
-
-
-.left-top {
-	/*background-image: url(<%= asset_path 'blurred-abstract.jpg' %>);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-color: #64b5f6;*/
-	z-index: 5;
-	height: 100vh;
-	position: relative;
+.learning-top {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
+.work-resume-left {
+	background-color: rgba(30, 0, 30, 0.7);
+	position: relative;
+	z-index: 11;
+	
+	padding-top: 50px;
+}
+
+
+
 .down-arrow-holder {
-	position: absolute;
-	bottom: 20vh;
+	position: relative;
+	padding-top: 20px;
 	width: 100%;
 }
 
@@ -181,15 +248,9 @@
 
  .icons-left {
  	z-index: 20;
- 	position: absolute;
- 	bottom: 25vh;
- 	left: 35vw;
- }
-
- .icons-holder {
- 	position: absolute;
- 	z-index: 11;
- 	width: 100%;
+ 	position: relative;
+ 	left: 100px;
+/* 	width: 50%;*/
  }
 
 .icons-left a {
@@ -199,11 +260,6 @@
  	font-weight: 600;
  }
 
-.left-bianca-text {
-	margin-top: 2vh;
-	border: 1px solid rgba(255, 255, 255, 0.2) ;
-	height: 95vh;
-}
 
 .border-left {
 	margin-top: 2vh;
@@ -220,12 +276,6 @@
 
 
 
-.left-side-top {
-	padding-top: 5%;
-	margin-bottom: auto;
-	/*background-color: rgba(0, 0, 0, 0.3);*/
-	height: 100vh;
-}
 
 .left-bianca-text img{
 	width: 25%;
@@ -241,23 +291,29 @@
 
 
 
-.learning-top {
-	margin-top: 50px;
-}
+
 
 .skills-first-row {
 	margin-bottom: 0;
 	margin-top: 0;
+	position: relative;
 }
 
 .left-skills {
 	position: relative;
 	background-color: rgba(63,80,165, 0.5);
+	background-image: url(<%= asset_path 'galaxylaptopskills.png' %>);
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 600px;
+	height: 50vh;
 }
 
 .skills-row {
+	position: relative;
 	margin-bottom: 0;
-	margin-top: 10vh;
+	margin-top: 0;
 }
 
 .skills-image {
@@ -286,29 +342,7 @@
 	margin: 2% 0;
 }
 
-.nav-bar {
-	position: fixed;
-	right: 3%;
-	top: 30vh;
-	z-index: 20;
-	width: 10vw;
-	/*height: 70vh;*/
-	/*margin-top: 8%;*/
-	margin-bottom: 0;
-	background-color: rgba(0, 0, 0, 0.9);
-	padding-bottom: 20px;
-}
 
-.nav-text-holder {
-	margin-left: 20%;
-	color: #3f50a5;
-}
-
-.nav-bianca-left {
-	width: 10vw;
-	border-bottom: 1px solid purple;	
-	background-color: rgba(0, 0, 0, 0.1);
-}
 
 .inline {
 	display: inline-block;
