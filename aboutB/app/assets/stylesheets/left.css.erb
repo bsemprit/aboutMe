@@ -267,20 +267,6 @@
 	height: 95vh;
 }
 
-.border-left-skills {
-	margin-top: 2vh;
-	padding-top: 2vh;
-	border: 1px solid rgba(0, 0, 0, 0.2) ;
-	margin-bottom: 2vh;
-}
-
-
-
-
-.left-bianca-text img{
-	width: 25%;
-}
-
 .summary-small-left {
 	/*font-family: 'Rex';*/
 	font-size: 40px;
@@ -288,8 +274,6 @@
 	margin-top: 10vh;
 	/*background-color: rgba(0,0,0,0.5);*/
 }
-
-
 
 
 
@@ -301,11 +285,6 @@
 
 .left-skills {
 	position: relative;
-	background-color: rgba(63,80,165, 0.5);
-	background-image: url(<%= asset_path 'galaxylaptopskills.png' %>);
-	background-position: cover;
-	background-repeat: no-repeat;
-	background-size: 100%;
 	min-height: 600px;
 	height: 50vh;
 }
@@ -314,32 +293,65 @@
 	position: relative;
 	margin-bottom: 0;
 	margin-top: 0;
+	padding-top: 30px;
+}
+
+.skills-row-images {
+	position: relative;
+	padding-top: 100px;
+	background-image: url(<%= asset_path 'laptopskills.png' %>);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 600px;
+	height: 40vh;
+}
+
+.bottom-image {
+	background-color: rgba(63,80,165, 0.5);
+	background-image: url(<%= asset_path 'galaxy.jpg' %>);
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+.skills-row-holder{
+	position: relative;
+	/*background-color: rgba(63,80,165, 0.5);*/
+	
 }
 
 .skills-image {
-	height: 50px;
+	height: 100px;
+	z-index: 11;
+	position: relative;
 }
+
+.javascript{
+	visibility: hidden;
+	position: absolute;
+	font-family: 'Rex';
+}
+
+.html-left, .ruby-left, .rails-left, .cplusplus-left {
+	margin-left: 30px;
+}
+
+.javascript-left:hover .javascript{
+	visibility: visible; 
+	z-index: 12;
+}
+
+/*.javascript-left:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}*/
 
 .skills-text {
-	font-weight: 300;
+	font-weight: 100;
 	font-size: 24px;
-	font-family: "Josefin Sans", "Poiret One", Roboto;
-}
-
-.left-portfolio {
-	/*height: 70vh;*/
-	width: 100vw;
-	/*background-image: url(<%#= asset_path 'randomTechBackground.jpg' %>);*/
-	background-position: cover;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-	position: relative;
-	margin-top: 5%;
-}
-
-.left-divider {
-	margin: 2% 0;
+	font-family: "Poiret One", Roboto;
+	padding-left: 100px;
 }
 
 
@@ -400,17 +412,48 @@ a.final-project-link:visited, a.final-project-link:active  {
 	padding: 5px;
 }
 
-.loader {
-	transform: rotate(90deg);
-}
-
-.loaders-holder {
-	min-height: 150px;
-}
-
-
-
-.yea {
-	z-index: 100;
+.contact-row, .contact-holder {
 	position: relative;
+	z-index: 11;
+	margin-bottom: 0;
+}
+
+.contact-text {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.bottom {
+/*	background-image: url(<%= asset_path 'galaxygirl.jpg' %>);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;*/
+	position: relative;
+	/*height: 150vh;*/
+	margin-bottom: 0;
+}
+
+.me-row {
+	background-color: rgba(56, 56, 137, 0.5);
+	position: relative;
+}
+
+.image-holder {
+	background-image: url(<%= asset_path 'cartoonMe.jpg' %>);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	height: 600px;
+	opacity: 0.6;
+}
+
+.aboutMe {
+	font-size: 20px;
+	margin-top: 80px;
+}
+
+.alil {
+	margin-top: 50px;
 }

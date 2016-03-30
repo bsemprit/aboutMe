@@ -203,67 +203,134 @@
 
 <!-- Skills -->
 
-<div class="row skills-row">
-	<div class="col l12 m12 s12 left-skills center" id="skills">
-		<div class="center row skills-first-row white-text ">
-			<h3 >Skills </h3>
-
+<div class="bottom-image">
+	
+<div class="row skills-row white-text">
+	<div class="col l12 m12 s12 left-skills" id="skills">
+		<div class="row skills-row-images">
+			<div class="col push-l3 l8 skills-row-holder">
+				
+				<div class="javascript-left inline ">
+				    <p class="javascript black-text">Javascript</p>        
+					<%= image_tag "js-icon.png", class: "skills-image"%> 
+				</div>
+				<div class="html-left inline">
+					<%= image_tag "HTML5.png", class: "skills-image"%> 
+					
+				</div>
+				<div class="ruby-left inline">
+					<%= image_tag "ruby.png", class: "skills-image"%> 
+					
+				</div>
+				<div class="rails-left inline">
+					<%= image_tag "rails.png", class: "skills-image"%> 
+					
+				</div>
+				<br>
+				<div class="linux-left inline">
+					<%= image_tag "linux.png", class: "skills-image circle"%> 
+					
+				</div>
+				<div class="cplusplus-left inline">
+					<%= image_tag "cplusplus.png", class: "skills-image circle"%> 
+				</div>
+				<br>
+				<div class="skills-text">
+					<h3>And the technologies <br>I've acquired and used...</h3>
+				</div>
+				
+			</div>
 		</div>
-		<div class="center row">
-			<div class="col l10">
-				
-			<div class="javascript-left">
-				<%= image_tag "javascript.png", class: "skills-image"%> 
-			            
+	</div>
+</div>
+
+<!-- Projects Me and Contacts-->
+<div class="row bottom">
+	
+<!-- Projects-->
+	<div class="row">
+		<div class="col l12 s12 m12 white-text">
+			<div class="col push-l2 l4 s4 m4">
+				<h2> Portfolio</h2>
+				<div class="projects-holder">
+					<%= image_tag "macbook.png", class: "macbook"%>
+				</div>
 			</div>
-			<div class="html-left">
-				<%= image_tag "CSS3_and_HTML5_badges.svg.png", class: "skills-image"%> 
-				
-			</div>
-			<div class="Ruby-left">
-				<%= image_tag "ruby.png", class: "skills-image"%> 
-				
-			</div>
-			<div class="rails-left">
-				<%= image_tag "blurred-abstract.jpg", class: "skills-image"%> 
-				
-			</div>
-			<div class="linux-left">
-				<%= image_tag "ubuntu.png", class: "skills-image ubuntu"%> 
-				
-			</div>
-			<div class="c++-left">
-				<%= image_tag "cplusplus.png", class: "skills-image"%> 
-			</div>
-				
+			<div class="col l8 s8 m8">
+				<div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
+		            <div class="card-content">
+		              <span class="card-title ironhack-details"> Ironhack Final Project</span>
+		              <p class="">This project allows people to give back without taking money from them. Instead, spend some time sitting at a computer doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
+		            </div>
+		            <div class="card-action">
+		              <p>
+		              	
+		              <a href="https://g2charity.co/" target="_blank" class="final-project-link">CLICK HERE</a>
+		              </p>
+		            </div>
+	            </div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- Projects -->
-<div class="row">
-	<div class="col l12 s12 m12 left-portfolio white-text">
-		<div class="col push-l2 l4 s4 m4">
-			<h2> <span class="purple darken-1" id="portfolio">Portfolio</span></h2>
-			<div class="projects-holder">
-				<%= image_tag "macbook.png", class: "macbook"%>
-			</div>
+<!-- Me! -->
+<div class="row me-row white-text">
+	<div class="me-holder col l12">
+		<div class="col l4 image-holder">
+			<%#= image_tag "cartoonMe.jpg", class: "me-image"%>
 		</div>
-		<div class="col l8 s8 m8">
-			<div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
-	            <div class="card-content">
-	              <span class="card-title ironhack-details"> Ironhack Final Project</span>
-	              <p class="">This project allows people to give back without taking money from them. Instead, spend some time sitting at a computer doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
-	            </div>
-	            <div class="card-action">
-	              <p>
-	              Check out my...	
-	              <a href="https://mighty-bastion-71330.herokuapp.com/" target="_blank" class="final-project-link">Final Project</a>
-	              </p>
-	            </div>
-            </div>
+		<div class="col l6 aboutme-left">
+			<h4 class="alil">A little about me...</h4>
+			<p class="aboutMe">
+				I am currently working in the Ironhack web development bootcamp after taking the 8 week intensive camp, while studying at Strayer University online for my Bachelors in Computer Science. I enjoy studying and learning, but my true passion is anything tech-related.
+				<br>
+				<br>
+				I'm a creative individual and love to read and write poetry. I have won competitions in poetry and write mostly at night while I study and work by day. 
+				<br><br>
+				I'm always interested in hearing from former colleagues, managers, friends, and anyone interesting, so feel free to reach out. 
+			</p>
 		</div>
 	</div>
 </div>
 
+
+
+	<!-- Contact -->
+<div class="row black white-text contact-row">
+	<div class="col l6 contact-holder">
+			<h2 class="center-align">Contact Me</h2>
+			<p class="contact-text">If you want to get in touch with me for help on a project, offer me a project/job, tell me about a bug or just chat about the day, send me a message!</p>
+		<div class="row">
+			    <form class="col s12">
+				      <div class="row">
+				        	<div class="input-field col s6">
+				          <input placeholder="email@yes.com" id="email" type="email" class="validate">
+				          <label for="email">Email</label>
+				        	</div>
+				        	<div class="input-field col s6">
+				          <input id="name" type="text" class="">
+				          <label for="name">Name</label>
+				        	</div>
+				      </div>
+				      <div class="row">
+					        <div class="input-field col s12">
+					          <textarea id="textarea1" type="text" class="materialize-textarea"></textarea>
+					          <label for="textarea1">Tell me a message</label>
+					        </div>
+				      </div>
+			     
+
+			    </form>
+		</div> <!-- form row end -->
+	</div>
+
+		<div class="col l5 white-text">
+			<h4>Bianca Semprit</h4>
+			<p>Copyright <i class="fa fa-copyright"></i> 2016 </p>
+		</div>
+</div>
+
+
+
+</div>
