@@ -24,4 +24,4 @@ test:
 production:
   <<: *default
   database: AboutB_production
-  password: <%= ENV["AboutB_DATABASE_PASSWORD"] %>
+  # password: <%= ENV["AboutB_DATABASE_PASSWORD"] %>
