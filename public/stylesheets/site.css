@@ -1,7 +1,7 @@
 
  @font-face { font-family: Blacksmith; src: url('../font/BlackSmith.ttf'); } 
  @font-face { font-family: Beyno; src: url('../font/BEYNO.otf'); } 
- @font-face { font-family: Graph; src: url('../font/GRAFC___.TTF'); } 
+ @font-face { font-family: Poiret; src: url('../font/PoiretOne-Regular.ttf'); } 
 
 
 html {
@@ -61,7 +61,7 @@ body {
 }
 
 .bi {
-	font-family: Graph, serif;
+	font-family: Poiret, serif;
 	font-size: 40px;
 	display: inline-block;
 }
@@ -117,7 +117,7 @@ body {
 .enter-left {
 	top: 40vh;
 	left: 40%;
-	font-family: Graph, serif; 
+	font-family: Poiret, serif; 
 }
 
 .enter-right-text {

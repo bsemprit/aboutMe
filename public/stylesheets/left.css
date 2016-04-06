@@ -102,10 +102,10 @@
 }
 
 .left-top {
-	z-index: 5;
+	position: relative;
+	/*z-index: 5;*/
 	height: 100vh;
 	width: 100%;
-	position: relative;
 }
 
 
@@ -181,17 +181,18 @@
 
 .strayer-info, .ironhack-info, .broward-info {
 	position: relative;
-	display: none;
+	/*display: none;*/
+	opacity: 0.3;
 }
 
 .strayer-hover, .ironhack-hover, .broward-hover {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .strayer-arrow, .ironhack-arrow, .broward-arrow{
 	width: 30px;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 }
 
 .strayer-holder, .ironhack-holder, .broward-holder {
@@ -200,13 +201,13 @@
 
 .strayer-holder:hover .strayer-hover, .ironhack-holder:hover .ironhack-hover, .broward-holder:hover .broward-hover {
 	display: none;
+	/*opacity: 1 !important;*/
 }
 
 .strayer-holder:hover .strayer-info, .ironhack-holder:hover .ironhack-info, .broward-holder:hover .broward-info {
 	display: block;
 	transition: all .3 ease-in;
 }
-
 .learning-top {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -295,7 +296,7 @@
 .skills-row-images {
 	position: relative;
 	padding-top: 100px;
-	background-image: url('../images/laptopskills.png');
+	background-image: url('../images/laptopskillsmultiple.png');
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -319,16 +320,17 @@
 }
 
 .skills-image {
-	height: 100px;
+	height: 70px;
 	z-index: 11;
 	position: relative;
+	margin-left: 60px;
 }
 
-.javascript{
+/*.javascript{
 	visibility: hidden;
 	position: absolute;
 	font-family: 'Rex';
-}
+}*/
 
 .html-left, .ruby-left, .rails-left, .cplusplus-left {
 	margin-left: 30px;
@@ -348,6 +350,7 @@
 	font-size: 24px;
 	font-family: "Poiret One", Roboto;
 	padding-left: 100px;
+	margin-top: 60px;
 }
 
 

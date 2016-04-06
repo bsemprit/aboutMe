@@ -31,15 +31,18 @@ $(document).ready( function() {
 	});
 	
 	$('.strayer-holder').hover(function(){
-		$('.strayer-info').addClass('animated slideInUp');
+		$('.strayer-info').addClass('animated fadeIn');
+		$('.strayer-info').css('opacity', 1);
 	})
 
 	$('.ironhack-holder').hover(function(){
-		$('.ironhack-info').addClass('animated slideInUp');
+		$('.ironhack-info').addClass('animated fadeIn');
+		$('.ironhack-info').css('opacity', 1);
 	})
 
 	$('.broward-holder').hover(function(){
-		$('.broward-info').addClass('animated slideInUp');
+		$('.broward-info').addClass('animated fadeIn');
+		$('.broward-info').css('opacity', 1);
 	})
 
 
